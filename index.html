@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Aadhaar Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <img src="aadhaar1.jpg" alt="Aadhaar Logo" id="logo-inside-box">
+        <div id="con">Mask Aadhaar Number</div>
+        <form onsubmit="event.preventDefault(); maskAadhaar();">
+            <input type="text" id="aadharInput" placeholder="Enter 12-digit Aadhaar Number..." maxlength="12" required oninput="enforceDigits(this)">
+            <br>
+            <button id="btn" type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
